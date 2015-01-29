@@ -1,0 +1,730 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s,
+samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article,
+aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    margin: 0 0 45px;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Patua One', cursive;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 180%;
+}
+
+h3 {
+    font-size: 150%;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.red {
+    color: #f0502b !important;
+}
+
+.right {
+	float: right;
+}
+
+div.facebook {
+	position: absolute;
+	top: -37px;
+	right: -110px;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+i {
+    font-style: italic;
+}
+
+.center {
+    text-align: center;
+}
+
+span.lobster {
+    font-family: 'Lobster Two', cursive;
+    font-weight: bold;
+}
+
+div.container {
+    width: 1020px;
+    margin: 0 auto;
+    position: relative;
+}
+
+div.header {
+    margin-top: 30px;
+    height: 160px;
+}
+
+div.login {
+    position: absolute;
+    background: #405952;
+    top: -30px;
+    right: 0px;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 0 0 5px 5px;
+}
+
+div.login img {
+    margin: -4px 10px -3px 0;
+}
+
+div.login a {
+    color: #fff;
+    text-decoration: none;
+}
+
+div.login a:hover {
+    text-decoration: underline;
+}
+
+div.logo {
+    float: left;
+    z-index: 100;
+    position: relative;
+}
+
+div.headerText img {
+    margin-bottom: -8px;
+    margin-right: 10px;
+}
+
+div.headerText {
+    float: right;
+    font-family: 'Patua One', cursive;
+    font-size: 200%;
+    color: #405952;
+    margin: 30px 0;
+}
+
+div.nav {
+    width: 100%;
+    background: #405952;
+    text-align: right;
+    margin-top: -60px;
+}
+
+div.nav ul li {
+    display: inline;
+}
+
+div.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+div.nav ul li a:hover {
+    background: #f79552;
+}
+
+div.bg {
+    height: 350px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+div.slideBg {
+    background: url("../images/slide-bg.jpg") no-repeat;
+    background-size: cover;
+    height: 320px;
+    width: 100%;
+}
+
+div.slide {
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    height: 350px;
+}
+
+div.slide div.image {
+    float: right;
+    margin-top: 20px;
+}
+
+div.slideshow {
+    position: relative;
+    height: 320px;
+    z-index: 1;
+}
+
+div.slideshow h1 {
+    font-family: 'Patua One', cursive;
+}
+
+div.textArea {
+    padding-top: 105px;
+    width: 600px;
+    text-align: center;
+    float: left;
+}
+
+div.textArea h1 {
+    color: #f0502b;
+    font-size: 400%;
+    margin-bottom: 0px;
+}
+
+a.button, a.success {
+    background: #f79552;
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+a.success {
+    background: #12ae1d;
+    width: 100%;
+    text-align: center;
+}
+
+div.slide a.button {
+    font-size: 235%;
+    font-family: 'Patua One', cursive;
+    margin: 40px 0;
+    padding: 10px 100px;
+}
+
+div.content {
+    background: #ededed; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ededed 0%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ededed 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ededed 0%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ededed 0%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ededed 0%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+    padding: 40px 0;
+}
+
+div.content h1, div.content h2, div.content h3, div.content h4,
+div.content h5 {
+    color: #405952;
+}
+
+div.content h1 {
+    border-bottom: 1px solid #405952;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+div.content p {
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+div.primary {
+    width: 65%;
+    float: left;
+}
+
+div.camper {
+    float: left;
+    width: 313px;
+    padding: 25px;
+    background: #ddd;
+    border-radius: 10px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+div.camper img {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+div.camper a.book {
+    background: #f79552;
+    font-family: 'Patua One', cursive;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+}
+
+div.camper ul {
+    margin: 0 0 15px 0;
+}
+
+div.camper ul li {
+    display: block;
+    width: 100%;
+    line-height: 1.5;
+}
+
+div.camper a.book:hover {
+    background: #c87238;
+}
+
+div.camper:last-child {
+    margin-right: 0px;
+}
+
+div.camper:hover {
+    background: #eee;
+}
+
+div.primary ul {
+	margin-bottom: 20px;
+}
+
+div.primary li {
+    list-style: disc;
+    margin-left: 15px;
+    line-height: 1.6;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+div.secondary {
+    width: 30%;
+    float: right;
+}
+
+div.calendar {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+div.camperHero {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+div.camperHero h1 {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    color: #fff;
+    font-size: 22px;
+    background: #f0512b;
+    padding: 10px 20px 10px 70px;
+    margin: 0px;
+    border-bottom: none;
+}
+
+div.camperHero img {
+    width: 100%;
+}
+
+div.galleryImages img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+div.galleryImages a:nth-child(4n) img {
+    margin-right: 0px;
+}
+
+div.secondary form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+div.secondary form div {
+    margin-bottom: 15px;
+}
+
+div.secondary form input {
+    width: 100%;
+    border: none;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+div.secondary form input[type=submit] {
+    background: #12ae1d;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+div.extras {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+    text-align: center;
+}
+div.extras img {
+    margin-bottom: 10px;
+}
+div.extras h3 {
+    margin-bottom: 10px;
+}
+
+div.admin form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+div.admin form div {
+    margin-bottom: 20px;
+}
+
+div.admin form input {
+    width: 220px;
+    border: none;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #eee;
+}
+
+div.admin form input[type=submit] {
+    background: #12ae1d;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+div.errors {
+    background: #f5c1c1;
+    color: #444;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #e02828;
+    margin-bottom: 20px;
+}
+
+div.errors div {
+    margin-bottom: 5px;
+}
+div.errors div:last-child {
+    margin-bottom: 0px;
+}
+
+div.cke_inner {
+    margin-bottom: 0px !important;
+}
+
+textarea {
+    width: 400px;
+}
+
+.js-files {
+    float: left;
+    margin-bottom: 0px !important;
+}
+
+.js-file-tpl {
+    background: #f4f4f4;
+    float: left;
+    padding: 20px;
+    width: 180px;
+}
+
+.js-files p {
+    margin-bottom: 0;
+}
+
+div.progress {
+    border: 1px solid #ccc;
+    width: 218px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.js-progress {
+    width: 200px;
+    background: green;
+    height: 18px;
+}
+
+div.footer {
+    background: #405952;
+    padding: 15px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 45px;
+    width: 100%;
+}
+
+div.footer p {
+    color: #fff;
+    margin: 0px;
+    line-height: 1;
+}
+
+div.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+div.footer a:hover {
+    text-decoration: underline;
+}
+
+span.payment-errors {
+    background: rgb(255, 228, 228);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid red;
+    display: none;
+}
+
+div.summary {
+    margin-top: 20px;
+}
+
+div.product span.cost {
+    float: right;
+}
+
+div.secondary div.product {
+    margin-bottom: 0px;
+}
+
+div.product p {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+div.secondary a.button {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    background: #12ae1d;
+}
+
+div.alert {
+    background: #f9fcd0;
+    border: 1px solid #f7f417;
+    padding: 10px;
+}
+
+div.alert p:last-child {
+    margin-bottom: 0px;
+}
+
+div.checkout {
+    display: none;
+}
+
+#payment-form input[type=text] {
+    border: 1px solid #ccc;
+}
+
+#payment-form input[type=checkbox] {
+    float: left;
+    margin-right: 5px;
+    width: 15px;
+    margin-top: 0px;
+}
+
+div.validation {
+    background: #fbbaba;
+    padding: 10px;
+    border: 1px solid red;
+    margin-bottom: 15px;
+}
+
+div.validation p:last-child {
+    margin-bottom: 0;
+}
+
+table.bookings {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    border: 1px solid #ccc;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table.bookings tr td:first-child {
+    width: 200px;
+}
+
+table.bookings td {
+    padding: 10px;
+}
+
+table.bookings tr:nth-child(2n) td {
+    background: #ccc;
+}
+
+table.bookings tr td:first-child {
+    font-weight: bold;
+}
+
+table.bookings div.date {
+    float: left;
+    margin-right: 20px;
+}
+
+ol li {
+    list-style-type: decimal;
+    line-height: 1.4;
+}
+
+div.alert {
+    line-height: 1.4;
+}
+
+ol {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+div.primary div.loginBox {
+    width: 400px;
+    padding: 40px;
+    position: relative;
+    background: #eee;
+    border: 1px solid #ccc;
+}
+
+div.loginBox label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+div.loginBox input[type=text], div.loginBox input[type=password] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+div.loginBox input[type=submit] {
+    background: #29822b;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    width: 100%;
+    border-radius: 5px;
+}
+
+div.loginBox a {
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+div.loginBox a:hover {
+    text-decoration: underline;
+}
+
+form.reset label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form.reset input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 200px;
+}
+
+div.success {
+    background: #98da9a;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #29822b;
+}
+
+div.location {
+    background: #405952;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+
+div.location h2 {
+    margin-bottom: 0px;
+    color: #fff;
+}
+
+div.location a {
+    color: #fff;
+}
+
+table.rateTable {
+    width: 100%;
+}
+
+table.rateTable td, table.rateTable th {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+table.rateTable th {
+    font-weight: bold;
+    background: #f4f4f4;
+    vertical-align: middle;
+}

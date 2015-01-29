@@ -1,0 +1,39 @@
+@import "style.css";
+
+div.receiptContainer {
+    width: 400px;
+    margin: 50px auto;
+}
+
+div.receiptContainer h1, div.receiptContainer h2 {
+    text-align: center;
+}
+
+div.receiptContainer div.image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div.receiptContainer table {
+    width: 100%;
+}
+
+div.receiptContainer table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+div.receiptContainer div.note {
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+div.receiptContainer a.print {
+    display: block;
+    background: green;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0;
+}
